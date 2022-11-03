@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class AdmPaciente
+    public static class AdmPaciente
     {
-        public List<Paciente> Listar()
+        public static List<Paciente> Listar()
         {
             List<Paciente> lista = new List<Paciente>();
 
@@ -23,19 +23,19 @@ namespace Negocio
             return lista;
         }
 
-        public int Insertar(Paciente paciente)
+        public static int Insertar(Paciente paciente)
         {
             //TODO Agregar paciente a la lista
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             //TODO Elminar paciente por id
             return 0;
         }
 
-        public Paciente TraerUno(int nroHistClinica)
+        public static Paciente TraerUno(int nroHistClinica)
         {
             //TODO Devolver paciente por numero de historia clinica
             return null;

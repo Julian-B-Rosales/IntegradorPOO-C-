@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class AdmHabitacion
+    public static class AdmHabitacion
     {
-        public List<Habitacion> Listar()
+        public static List<Habitacion> Listar()
         {
             List<Habitacion> lista = new List<Habitacion>();
 
@@ -22,25 +22,25 @@ namespace Negocio
             return lista;
         }
 
-        public List<Habitacion> Listar(string estado)
+        public static List<Habitacion> Listar(string estado)
         {
             //TODO Retornar habitaciones por estado
             return null;
         }
 
-        public int Insertar(Habitacion habitacion)
+        public static int Insertar(Habitacion habitacion)
         {
             //TODO Agregar habitacion a la lista
             return 0;
         }
 
-        public int Eliminar(int id)
+        public static int Eliminar(int id)
         {
             //TODO Elminar habitacion por id
             return 0;
         }
 
-        public Habitacion TraerUno(int numero)
+        public static Habitacion TraerUno(int numero)
         {
             //TODO Devolver medico por id
             return null;

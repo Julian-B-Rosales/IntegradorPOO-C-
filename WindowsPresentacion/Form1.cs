@@ -23,9 +23,7 @@ namespace WindowsPresentacion
         {
             List<Medico> medicos = new List<Medico>();
 
-            AdmMedico admMedico = new AdmMedico();
-
-            medicos = admMedico.Listar();
+            medicos = AdmMedico.Listar();
 
             gridMedicos.DataSource = medicos;
         }
@@ -33,10 +31,8 @@ namespace WindowsPresentacion
         private void btnListarPacientesGrid_Click(object sender, EventArgs e)
         {
             List<Paciente> pacientes = new List<Paciente>();
-            
-            AdmPaciente admPaciente = new AdmPaciente();
 
-            pacientes = admPaciente.Listar();
+            pacientes = AdmPaciente.Listar();
 
             gridPacientes.DataSource = pacientes;
         }
@@ -45,9 +41,7 @@ namespace WindowsPresentacion
         {
             List<Medico> medicos = new List<Medico>();
 
-            AdmMedico admMedico = new AdmMedico();
-
-            medicos = admMedico.Listar();
+            medicos = AdmMedico.Listar();
 
             foreach (Medico medico in medicos)
             {
@@ -62,9 +56,7 @@ namespace WindowsPresentacion
         {
             List<Habitacion> habitaciones = new List<Habitacion>();
 
-            AdmHabitacion admHabitacion = new AdmHabitacion();
-
-            habitaciones = admHabitacion.Listar();
+            habitaciones = AdmHabitacion.Listar();
 
             foreach (Habitacion habitacion in habitaciones)
             {
