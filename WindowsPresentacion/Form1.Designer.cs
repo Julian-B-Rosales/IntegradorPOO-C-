@@ -36,6 +36,7 @@
             this.btnListarPacientesGrid = new System.Windows.Forms.Button();
             this.btnListarMedicosClinicos = new System.Windows.Forms.Button();
             this.btnListarHabitaciones = new System.Windows.Forms.Button();
+            this.btnImprimirEdad = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridPacientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridMedicos)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +62,7 @@
             // 
             // btnListarMedicosGrid
             // 
-            this.btnListarMedicosGrid.Location = new System.Drawing.Point(55, 48);
+            this.btnListarMedicosGrid.Location = new System.Drawing.Point(55, 22);
             this.btnListarMedicosGrid.Name = "btnListarMedicosGrid";
             this.btnListarMedicosGrid.Size = new System.Drawing.Size(174, 77);
             this.btnListarMedicosGrid.TabIndex = 3;
@@ -90,7 +91,7 @@
             // 
             // btnListarPacientesGrid
             // 
-            this.btnListarPacientesGrid.Location = new System.Drawing.Point(55, 181);
+            this.btnListarPacientesGrid.Location = new System.Drawing.Point(55, 151);
             this.btnListarPacientesGrid.Name = "btnListarPacientesGrid";
             this.btnListarPacientesGrid.Size = new System.Drawing.Size(174, 77);
             this.btnListarPacientesGrid.TabIndex = 3;
@@ -100,7 +101,7 @@
             // 
             // btnListarMedicosClinicos
             // 
-            this.btnListarMedicosClinicos.Location = new System.Drawing.Point(55, 321);
+            this.btnListarMedicosClinicos.Location = new System.Drawing.Point(55, 305);
             this.btnListarMedicosClinicos.Name = "btnListarMedicosClinicos";
             this.btnListarMedicosClinicos.Size = new System.Drawing.Size(174, 36);
             this.btnListarMedicosClinicos.TabIndex = 3;
@@ -110,7 +111,7 @@
             // 
             // btnListarHabitaciones
             // 
-            this.btnListarHabitaciones.Location = new System.Drawing.Point(55, 386);
+            this.btnListarHabitaciones.Location = new System.Drawing.Point(55, 380);
             this.btnListarHabitaciones.Name = "btnListarHabitaciones";
             this.btnListarHabitaciones.Size = new System.Drawing.Size(174, 46);
             this.btnListarHabitaciones.TabIndex = 3;
@@ -118,11 +119,22 @@
             this.btnListarHabitaciones.UseVisualStyleBackColor = true;
             this.btnListarHabitaciones.Click += new System.EventHandler(this.btnListarHabitaciones_Click);
             // 
+            // btnImprimirEdad
+            // 
+            this.btnImprimirEdad.Location = new System.Drawing.Point(55, 253);
+            this.btnImprimirEdad.Name = "btnImprimirEdad";
+            this.btnImprimirEdad.Size = new System.Drawing.Size(174, 30);
+            this.btnImprimirEdad.TabIndex = 4;
+            this.btnImprimirEdad.Text = "Imprimir Nombre y Edad";
+            this.btnImprimirEdad.UseVisualStyleBackColor = true;
+            this.btnImprimirEdad.Click += new System.EventHandler(this.btnImprimirEdad_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnImprimirEdad);
             this.Controls.Add(this.btnListarHabitaciones);
             this.Controls.Add(this.btnListarMedicosClinicos);
             this.Controls.Add(this.btnListarPacientesGrid);
@@ -149,6 +161,7 @@
         private System.Windows.Forms.Button btnListarPacientesGrid;
         private System.Windows.Forms.Button btnListarMedicosClinicos;
         private System.Windows.Forms.Button btnListarHabitaciones;
+        private System.Windows.Forms.Button btnImprimirEdad;
     }
 }
 

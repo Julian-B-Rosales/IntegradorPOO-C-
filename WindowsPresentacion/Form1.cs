@@ -63,5 +63,12 @@ namespace WindowsPresentacion
                 lstHabitaciones.Items.Add("Habitacion Nro: " + habitacion.Numero + " - " + habitacion.Estado);
             }
         }
+
+        private void btnImprimirEdad_Click(object sender, EventArgs e)
+        {
+            Paciente paciente = new Paciente() { Apellido = "Totti", Nombre = "Irene", ID = 10, NroHistoriaClinica = 243555, FechaNacimiento = new DateTime(2000, 04, 15)};
+
+            MessageBox.Show(paciente.Apellido + ", " + paciente.Nombre +"\nEdad: " + paciente.Edad);
+        }
     }
 }
